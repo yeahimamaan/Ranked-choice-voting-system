@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     cout<<"Enter number of candidates (1-10): ";
     int candidate_num;
-//Taking valid candidate count from user
+    //Taking valid candidate count from user
     do{
         cin >> candidate_num;
         if(candidate_num < 1 || candidate_num > 10)
@@ -12,22 +12,22 @@ int main(){
     while(candidate_num < 1 || candidate_num > 10);
 
     string candidate_name[10];
-//Taking candidate names as input from user
+    //Taking candidate names as input from user
     cout<<"\n Enter candidate names one by one."<<endl;
         for(int i=0; i<candidate_num; i++){
             int j=i+1;
             cout<<"Candidate "<<j<<" : ";
             cin>>candidate_name[i];
         }
-//Displaying selected Candidate names
+    //Displaying selected Candidate names
     cout<<"\n ----------------------------- ";
         cout<<"\n Selected Candidates: ";
         for(int j=0; j<candidate_num; j++){
             cout<<"\n "<< candidate_name[j];
 
         }
-//Taking voter count input from user
-    cout<<"\n Enter number of voters: ";
+    //Taking voter count input from user
+    cout<<"\n\n Enter number of voters: ";
     int voter_count;
     cin>> voter_count;
 
@@ -36,20 +36,25 @@ int main(){
     cout<<"\n *************************************** ";
     cout<<"\n Elections Begin!!! "<<endl;
 
+
    //Taking user preference by count of voters
     int votes[voter_count][candidate_num];
     cout<<"\n Selected Candidates: ";
     for(int j=0; j<candidate_num; j++){
-        cout<<"\n "<< candidate_name[j];
+        cout<<"\n "<< (j+1) << ". " << candidate_name[j];
     }
     //taking input per preference
-    for(int i=0 ; i < voter_count ; i++){
-        
-        cout<<"\nVoter No. "<< (i+1) << " \nVote for candidates as per preference!";
-
+     for(int i=0 ; i < voter_count ; i++){
+        cout<<"\n =======================================";
+        cout<<"\n Selected Candidates: ";
+        for(int j=0; j<candidate_num; j++){
+            cout<<"\n "<< (j+1) << ". " << candidate_name[j];
+        }
+        cout<<"\n =======================================";
+        cout<<"\n Voter No. "<< (i+1) << " \n Vote for candidates as per preference!";
        
             for(int k=0; k<candidate_num ; k++){
-                 cout<<"\n Preference No. "<< (k+1) <<" :";
+                 cout<<"\n Preference No. "<< (k+1) <<" (Enter candidate number): ";
                 cin>>votes[i][k];
             }
     }
@@ -81,5 +86,4 @@ int main(){
     cout<<"Winning candidate by points is: "<< candidate_name[winner_index] << " winning by "<< max_points << " Points !!!!\n Congratulations!";
 
     return 0;
-
 }
