@@ -26,8 +26,13 @@ g++ voting_system.cpp -o voting
 - Clear results display
 
 ## My Experience
-This is the first major and actual usable program I have written in my programming career and it took a lot of effort and programmer blocks 😭🙏🙏.
-But we got through I used all logic I could using what everything that has been taught to us in class thus far and I am personally very proud of this project with many more to come in the future. There are many changes I will make to this and furthermore enhace the user experience using Graphical User Interfaces and further polish it to as good as it can be.
+
+This is the first major and actually usable program I've written in my programming career, and it took a lot of effort and programmer's block 😭🙏🙏. 
+
+But we got through it! I used all the logic I could, working with everything that's been taught to us in class so far, and I'm personally very proud of this project - with many more to come in the future. 
+
+There are many changes I plan to make to enhance the user experience, including adding Graphical User Interfaces and polishing it to be as good as it can be.
+
 ---
 
 Made during first semester at Bahria University Islamabad Campus 🎓
